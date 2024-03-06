@@ -22,19 +22,19 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>        
-        <Text style={styles.headerText}>Cylinder Calculator</Text>
+        <Text style={styles.headerText}>Henger felszín számoló</Text>
       </View>
 
 
       <View style={styles.body}>
-        <Text style={styles.label}>Radius</Text>
+        <Text style={styles.label}>Sugár</Text>
         <TextInput
           style={styles.input}
           onChangeText={text => setRadius(text)}
           value={radius}
           keyboardType="numeric"
         />
-        <Text style={styles.label}>Height</Text>
+        <Text style={styles.label}>Magasság</Text>
         <TextInput
           style={styles.input}
           onChangeText={text => setHeight(text)}
@@ -42,9 +42,9 @@ export default function App() {
           keyboardType="numeric"
         />
         <Pressable onPress={calcArea} style={styles.button}>
-          <Text style={styles.buttonText}>Calculate</Text>
+          <Text style={styles.buttonText}>számolás :D</Text>
         </Pressable>
-        <Text style={styles.label}>Surface Area</Text>
+        <Text style={styles.label}>Felszín</Text>
         <TextInput
           style={styles.input}
           value={area}
